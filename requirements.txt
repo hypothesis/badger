@@ -1,0 +1,7 @@
+aiodns
+aiohttp
+click
+honcho
+redis
+requests
+sanic
