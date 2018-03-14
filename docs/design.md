@@ -4,9 +4,9 @@ badger is a service that provides fast answers to the query "how many
 annotations are there on this URL visible to me?"
 
 It consists of an indexing process and a web server. The indexing process
-creates a `(URL, scope) => count` mapping for every annotation in an h
-service's database. The _scope_ of an annotation identifies who it is visible to
-and is either the pubid of the annotation's group if it is shared, or the
+creates a `(URL, scope) => annotation count` mapping from the annotations in an h
+service's database. Each annotation is associated with a single _scope_ that identifies
+who it is visible to. This is either the pubid of the annotation's group if it is shared, or the
 username if the annotation is private.
 
 The web server's lookup endpoint computes the set of _scopes_ visible to the
